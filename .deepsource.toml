@@ -1,0 +1,27 @@
+version = 1
+
+test_patterns = ["tests/**"]
+
+exclude_patterns = [
+    ".bundle/**",
+    ".github/**",
+    ".vscode/**",
+    "_data/**",
+    "_includes/**",
+    "_layouts/**",
+    "assets/**",
+    "docs/**",
+    "icon/**",
+    "images/**",
+    "licenses/**",
+    "scripts/**",
+    "styleshetts/**"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  module_system = "amd"
+  environment = ["browser"]
